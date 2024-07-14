@@ -1,0 +1,5 @@
+.navbar-nav .nav-link.active {
+    color: #ff6347 !important; /* Tomato color for the active link */
+    font-weight: bold;
+  }
+  
