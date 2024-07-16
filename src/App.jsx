@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import {createBrowserRouter, createHashRouter, RouterProvider} from "react-router-dom"
 import Layout from './Componets/Layout/Layout'
 
 import NotFound from './Componets/NotFound/NotFound';
@@ -9,7 +9,7 @@ import Graph from './Componets/Graph/Graph';
 
 
 
-let routes = createBrowserRouter(
+let routes = createHashRouter(
   [{
     path: '/', element: <Layout/>,children:[
       {index:true,element: <CustomerTable/>},

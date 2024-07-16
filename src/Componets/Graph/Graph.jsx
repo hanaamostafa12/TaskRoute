@@ -30,7 +30,7 @@ function Graph() {
   const [selectedCustomer, setSelectedCustomer] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/data')
+    axios.get('https://hanaamostafa12.github.io/api/server.json')
       .then(response => {
         setCustomers(response.data.customers);
         setTransactions(response.data.transactions);
